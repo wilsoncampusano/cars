@@ -11,8 +11,9 @@ class VehicleSpec extends Specification implements DomainUnitTest<Vehicle> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void "can create a vehicle"() {
+        expect:" a not null domain "
+            def vehicle = new Vehicle()
+            vehicle != null
     }
 }
